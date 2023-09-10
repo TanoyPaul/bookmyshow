@@ -7,13 +7,19 @@ import "slick-carousel/slick/slick-theme.css";
 import DefaultHOC from "./HOC/default.hoc";
 //component
 import HomePage from "./Pages/Home.Page";
+
 import DefaultLayout from "./layouts/default.layout";
+
 
 function App () {
   return (
     <>
-        <DefaultLayout path = "/" exact Component = {DefaultHOC} />
+        {/* This took too much time to be fixed ! */}
+        <DefaultLayout>  
         <DefaultHOC path = "/" exact  Component = {HomePage} />
+        </DefaultLayout>
+        
+        
     </>
   
 

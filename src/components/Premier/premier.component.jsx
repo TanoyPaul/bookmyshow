@@ -14,11 +14,13 @@ const Premier = () => {
 
     return(
         <>
+        
         <div className="flex flex-col items-start px-4 py-0">
             <h3 className="text-white text-xl font-bold">Premiers</h3>
             <p className="text-white text-sm ">Brand new release every Friday !</p>
             
         </div>
+        <div className="sm: w-full h-full">
           <Slider {...settings}>
                 {PremierImages.map(
                     (image) => {
@@ -28,6 +30,7 @@ const Premier = () => {
                     }
                 )}
           </Slider>
+          </div>
         </>
     )
 

@@ -9,7 +9,6 @@ import { Route, Routes } from "react-router-dom";
 
 
 
-
 const DefaultHOC = ( { component:  Component , ...rest }) => {
     return (
         // component 
@@ -17,15 +16,13 @@ const DefaultHOC = ( { component:  Component , ...rest }) => {
         <>
           
           < Routes >
+          
           < Route 
           {...rest}
-          component = {(props) => {
-            
-             
+          component = {(props) => {     
+               
                  <Component {...props} />
              
-                   
-   
           }}
           />
           
