@@ -5,23 +5,33 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 // HOC
 import DefaultHOC from "./HOC/default.hoc";
+import MovieHOC from "./HOC/movie.hoc";
 //component
 import HomePage from "./Pages/Home.Page";
+import MoviePage from "./Pages/movie.page";
 
-import DefaultLayout from "./layouts/default.layout";
+import DefaultLayout from "./layouts/default.layout"
 
 
 function App () {
   return (
     <>
-        {/* This took too much time to be fixed ! */}
-        <DefaultLayout>  
+
+        <DefaultLayout>
         <DefaultHOC path = "/" exact  Component = {HomePage} />
-        </DefaultLayout>
+        </DefaultLayout>  
+
+
         
+        <MovieHOC path = "/movie/:id" exact Component = {MoviePage} />
+       
+       
+
+      
+       
+       
         
     </>
-  
 
                                   
   );

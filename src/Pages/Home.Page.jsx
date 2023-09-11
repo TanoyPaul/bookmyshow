@@ -11,7 +11,7 @@ const HomePage = () => {
         <>
       <div className="flex flex-col gap-10">
       <div className="container mx-auto px-4">
-        <h1 className="text-2xl font-bold text-gray-800 px-3 py-3">
+        <h1 className="text-2xl font-bold text-gray-800 px-3 py-3 ">
             The best of Entertainment !
         </h1>
            <EntertainmentCardSlider />

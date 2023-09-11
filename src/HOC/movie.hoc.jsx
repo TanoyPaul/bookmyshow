@@ -5,11 +5,10 @@
 
 import React from "react";
 import { Route, Routes } from "react-router-dom";
+import MovieLayout from "../layouts/movie.layout";
 // Layouts
 
-import DefaultLayout from "../layouts/default.layout";
-
-const DefaultHOC = ( { component:  Component , ...rest }) => {
+const MovieHOC = ( { component:  Component , ...rest }) => {
     return (
         // component 
         // props -> path exact
@@ -19,12 +18,12 @@ const DefaultHOC = ( { component:  Component , ...rest }) => {
           
           < Route 
           {...rest}
-          component = {(props) => {     
-               
-                
-                 <Component {...props} />
-                 
-               
+          component = {(props) => {   
+                              
+            <MovieLayout>
+               <Component {...props} />
+            </MovieLayout>
+
           }}
           />
           
@@ -34,5 +33,5 @@ const DefaultHOC = ( { component:  Component , ...rest }) => {
     )
 }
 
-export default DefaultHOC;
+export default MovieHOC;
     

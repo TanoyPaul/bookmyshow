@@ -1,6 +1,8 @@
 import React from "react";
 import Slider from "react-slick";
 
+import settings from "../../config/EntertainmentCarousel.config";
+
 const EntertainmentCard = (props) => {
     return (
         <>
@@ -29,14 +31,7 @@ const EntertainmentCardSlider = () => {
         
     ];
 
-    const settings = {
-        infinite: true,
-        autoplay: false,
-        slidesToShow: 4,
-        slidesToScroll: 3,
-        initialSlide: 0
-    }
-
+    
     return (
         <>
           <Slider {...settings}>
