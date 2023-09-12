@@ -8,28 +8,23 @@ import { Route, Routes } from "react-router-dom";
 // Layouts
 
 import DefaultLayout from "../layouts/default.layout";
-
 const DefaultHOC = ( { component:  Component , ...rest }) => {
     return (
         // component 
         // props -> path exact
-        <>
-          
-          < Routes >
-          
+        <>         
+          <Routes>
           < Route 
           {...rest}
           component = {(props) => {     
                
-                
+                <DefaultLayout>
                  <Component {...props} />
-                 
+                 </DefaultLayout>
                
           }}
           />
-          
           </Routes>
-          
         </>
     )
 }

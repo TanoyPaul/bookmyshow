@@ -6,8 +6,8 @@ const MoviePage = () => {
     return (
         <>
      
-      <div>
-        <img src = "https://image.tmdb.org/t/p/original/zSBVQIvx4UIHoFf1oDvixHyIQrz.jpg"  alt = " "/>
+      <div className="my-4">
+        <img src = "https://image.tmdb.org/t/p/original/zSBVQIvx4UIHoFf1oDvixHyIQrz.jpg"  alt = " " />
       </div>
       
         </>

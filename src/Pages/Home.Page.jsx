@@ -22,7 +22,7 @@ const HomePage = () => {
                 
             <div className="flex">
                 <img src = "https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120:q-80/premiere-banner-web-collection-202208191200.png"
-                alt="Premier logo"/>   
+                alt="Premier logo" className="w-full h-full"/>   
             </div>
 
            <PosterSlider image = {PremierImages} title = "Premiers" subtitle = "Brand new release every Friday !" isDark />

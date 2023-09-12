@@ -11,21 +11,27 @@ import HomePage from "./Pages/Home.Page";
 import MoviePage from "./Pages/movie.page";
 
 import DefaultLayout from "./layouts/default.layout"
-
+import MovieLayout from "./layouts/movie.layout";
 
 function App () {
   return (
     <>
 
-        <DefaultLayout>
-        <DefaultHOC path = "/" exact  Component = {HomePage} />
-        </DefaultLayout>  
+        
+        
+        <DefaultLayout >
+        <DefaultHOC  path = "/" exact  Component = {HomePage} />
+        </DefaultLayout>
+        
+          
 
 
         
+        <MovieLayout>
         <MovieHOC path = "/movie/:id" exact Component = {MoviePage} />
+        </MovieLayout>
        
-       
+        
 
       
        
