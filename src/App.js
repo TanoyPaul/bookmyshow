@@ -18,24 +18,17 @@ function App () {
     <>
 
         
-        
         <DefaultLayout >
-        <DefaultHOC  path = "/" exact  Component = {HomePage} />
+        <DefaultHOC  path = "/"  exact Component = {HomePage} />
         </DefaultLayout>
         
-          
-
-
+        
         
         <MovieLayout>
-        <MovieHOC path = "/movie/:id" exact Component = {MoviePage} />
+        <MovieHOC   path = "/movie/:id" exact Component = {MoviePage} />
         </MovieLayout>
        
-        
-
-      
-       
-       
+    
         
     </>
 

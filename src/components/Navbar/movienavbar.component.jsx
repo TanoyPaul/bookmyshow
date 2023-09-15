@@ -7,7 +7,7 @@ const NavSm = () => {
       <>
         <div className="text-white flex items-center justify-between">
          <div>
-            <h3 className="text-xl font-bold"><BiChevronLeft />Others</h3>
+            <h3 className="text-xl font-bold flex"><BiChevronLeft />It all starts here !</h3>
          </div>
          <div className="w-6 h-6">
             <BiShareAlt className="w-full h-full"/>
@@ -56,14 +56,14 @@ const MovieNavbar = () => {
 
     return (
         <>
-          <nav className="bg-navColor-800 px-3 py-2">
+          <nav className="absolute inset-x-0 z-30 bg-opacity-10 backdrop:filter backdrop-blur-lg lg:relative  bg-navColor-800 px-3 py-2">
             <div className="md:hidden">
                  {
                     // mobile screen
                     <NavSm/>
                  }
             </div>
-            <div className="hidden lg:hidden md:flex">
+            <div className="hidden lg:hidden md:block">
                  {
                     // tablet screen
                     <NavSm />
