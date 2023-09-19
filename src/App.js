@@ -13,6 +13,8 @@ import MoviePage from "./Pages/movie.page";
 import DefaultLayout from "./layouts/default.layout"
 import MovieLayout from "./layouts/movie.layout";
 
+import Plays from "./Pages/plays.page";
+
 function App () {
   return (
     <>
@@ -24,11 +26,13 @@ function App () {
         
         
         
-        <MovieLayout>
+        <MovieLayout >
         <MovieHOC   path = "/movie/:id" exact Component = {MoviePage} />
         </MovieLayout>
        
-    
+       
+       
+        <DefaultHOC  path = "/plays"  exact Component = {Plays} />
         
     </>
 
